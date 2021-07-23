@@ -1,5 +1,11 @@
-external fun printf(const char *fmt, ...);
+external fun strcmp(const var: string str1, const var: string str2);
 
 fun main(var: int argv, var: char *argc[]) {
+    if (!strcmp(argc[1], "new")) {
+        println("Starting new project...");
+    } else {
+        println("Unknown option");
+    }
 
+    println("Finished");
 }
